@@ -30,7 +30,7 @@
         {
             pictureBox1 = new PictureBox();
             button1 = new Button();
-            button2 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -52,22 +52,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // button5
             // 
-            button2.Location = new Point(79, 715);
-            button2.Name = "button2";
-            button2.Size = new Size(145, 50);
-            button2.TabIndex = 2;
-            button2.Text = "Only Green";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button5.Location = new Point(79, 715);
+            button5.Name = "button5";
+            button5.Size = new Size(145, 50);
+            button5.TabIndex = 2;
+            button5.Text = "Only Green";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(912, 881);
-            Controls.Add(button2);
+            Controls.Add(button5);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "Form1";
@@ -81,6 +81,6 @@
 
         private PictureBox pictureBox1;
         private Button button1;
-        private Button button2;
+        private Button button5;
     }
 }

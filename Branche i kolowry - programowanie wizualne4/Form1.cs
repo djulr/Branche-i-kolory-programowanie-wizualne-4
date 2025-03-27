@@ -26,7 +26,7 @@ namespace Branche_i_kolowry___programowanie_wizualne4
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Image != null) { 
 
