@@ -25,5 +25,39 @@ namespace Branche_i_kolowry___programowanie_wizualne4
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+
+                if (radioButton1.Checked)
+                {
+                    pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                    pictureBox1.Refresh();
+
+                    
+                }if(radioButton2.Checked)
+                {
+                    pictureBox1.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                    pictureBox1.Refresh();
+
+                }
+                if (radioButton3.Checked)
+                {
+                    pictureBox1.Image.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                    pictureBox1.Refresh();
+
+                }
+
+
+            }
+            else
+            {
+                
+            }
+        }
+
+      
     }
 }
