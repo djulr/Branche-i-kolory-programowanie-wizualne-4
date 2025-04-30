@@ -94,5 +94,32 @@ namespace Branche_i_kolowry___programowanie_wizualne4
                 MessageBox.Show("No picture");
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null) {
+
+   
+
+                Bitmap greenPic = new Bitmap(pictureBox1.Image);
+                for (int x = 0; x <= greenPic.Width - 1; x++)
+                {
+                    for (int y = 0; y <= greenPic.Height - 1; y++)
+                    {
+                        if (greenPic.GetPixel(x, y).G < greenPic.GetPixel(x, y).R + greenPic.GetPixel(x, y).B)
+                        {
+                            greenPic.SetPixel(x, y, Color.Black);
+                        }
+                    }
+                }
+                pictureBox1.Image = greenPic;
+                pictureBox1.Refresh();
+            }
+            else
+            {
+
+                MessageBox.Show("No picture");
+            }
+        }
     }
 }

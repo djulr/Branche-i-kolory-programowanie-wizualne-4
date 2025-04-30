@@ -36,6 +36,7 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(42, 700);
+            button1.Location = new Point(42, 772);
             button1.Name = "button1";
             button1.Size = new Size(184, 46);
             button1.TabIndex = 1;
@@ -102,7 +103,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(42, 470);
+            button3.Location = new Point(42, 460);
             button3.Name = "button3";
             button3.Size = new Size(184, 75);
             button3.TabIndex = 6;
@@ -112,7 +113,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(42, 589);
+            button4.Location = new Point(42, 560);
             button4.Name = "button4";
             button4.Size = new Size(184, 75);
             button4.TabIndex = 7;
@@ -120,11 +121,22 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // button5
+            // 
+            button5.Location = new Point(79, 715);
+            button5.Name = "button5";
+            button5.Size = new Size(145, 50);
+            button5.TabIndex = 2;
+            button5.Text = "Only Green";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(912, 881);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -145,6 +157,7 @@
 
         private PictureBox pictureBox1;
         private Button button1;
+        private Button button5;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private RadioButton radioButton3;
